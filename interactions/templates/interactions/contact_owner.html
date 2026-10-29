@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<section class='panel narrow'><h1>Contact the owner</h1><p>{{ property.title }}</p><form method='post'>{% csrf_token %}<label>Your message<textarea name='message' rows='5' required></textarea></label><button class='button'>Send inquiry</button></form></section>{% endblock %}

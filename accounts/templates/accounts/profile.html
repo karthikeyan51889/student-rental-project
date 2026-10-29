@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<section class='panel narrow'><p class='eyebrow'>YOUR ACCOUNT</p><h1>{{ request.user.get_full_name|default:request.user.username }}</h1><p>{{ request.user.get_role_display }} · {{ request.user.email }}</p><p>{{ request.user.phone }}</p></section>{% endblock %}
